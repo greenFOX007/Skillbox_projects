@@ -1,0 +1,1 @@
+const element=document.querySelector('.gallery__filter');const choices=new Choices(element,{searchEnabled:!1,placeholder:!1,renderSelectedChoices:'auto',itemSelectText:'',sorter:()=>{},resetScrollPosition:!1,})
