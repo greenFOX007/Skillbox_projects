@@ -28,4 +28,31 @@ var selector = document.getElementById("telephone");
           function: 'Минимальное число цифр - 9 ',
       }
       },
+
+      submitHandler: function (form, values, ajax) {
+
+        ajax({
+          url: "../send.php",
+          method: 'POST',
+          data: values,
+          async: true,
+          callback: function(response)  {
+            document.querySelector('.message-txt').innerHTML = response
+            document.querySelector('.mail-message').classList.remove('invisible')
+            setTimeout(()=>{
+              document.querySelector('.mail-message').classList.add('invisible')
+              document.querySelector('.form').reset()
+            },3000)
+          },
+          error: function (response) {
+            document.querySelector('.message-txt').innerHTML = response
+            document.querySelector('.mail-message').classList.remove('invisible')
+            document.querySelector('.mail-message').style.backgroundColor = 'rgba(237, 21, 21, 0.9)'
+            setTimeout(()=>{
+              document.querySelector('.mail-message').classList.add('invisible')
+              document.querySelector('.form').reset()
+            },3000)
+        }
+        });
+      },
     });

@@ -27,7 +27,7 @@ function mediaSwiper2() {
              },
             768: {
               slidesPerView:2,
-             spaceBetween: -17,
+             spaceBetween: 11,
              slidesPerGroup: 2,
             },
             1024: {

@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="css/min/simplebar.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/min/normalize.css">
-  <link rel="stylesheet" href="css/hystmodal.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
+  <div id="not-a-modal">
   <header class="header">
     <section class="header-top">
       <h6 class="visually-hidden">header</h6>
@@ -132,6 +132,18 @@
             <button aria-label="Выпадающее меню - реализм" data-path="1" data-bs-toggle="dropdown" class=" navigation-dropdown__btn navigation-dropdown__btn1 btn link">Реализм</button>
             <div  data-path="1"  class="dropdown__child dropdown__child1">
               <ul data-simplebar data-simplebar-auto-hide="true" class="dropdown__list">
+                <li class="dropdown__item   dropdown__item_real">
+                  <a class="dropdown__link " href="#">Тинторетто</a>
+                </li>
+                <li class="dropdown__item   dropdown__item_real">
+                  <a class="dropdown__link " href="#">Фридрих</a>
+                </li>
+                <li class="dropdown__item   dropdown__item_real">
+                  <a class="dropdown__link " href="#">Леонардо</a>
+                </li>
+                <li class="dropdown__item   dropdown__item_real">
+                  <a class="dropdown__link " href="#">Верроккьо</a>
+                </li>
                 <li class="dropdown__item   dropdown__item_real">
                   <a class="dropdown__link " href="#">Тинторетто</a>
                 </li>
@@ -289,203 +301,215 @@
         </div>
         <div class="gallery__swiper-container swiper-container swiper2" >
           <div class="pagination-container gallery__pagination-container ">
-            <div class="swiper-button-prev2 swiper-button-prev-style focus"></div>
+            <div class="swiper-button-prev2 swiper-button-prev-style focus">
+              <svg class="swiper-button-svg" width="30"  height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
+                <path class="transition" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="transparent"/>
+                <path class="transition" d="M16 20L11 15L16 10" stroke="white"/>
+                </svg>
+            </div>
             <div class="swiper-pagination  swiper-pagination2"></div>
-            <div class="swiper-button-next2 swiper-button-next-style focus"></div>
+            <div class="swiper-button-next2 swiper-button-next-style focus">
+              <svg class="swiper-button-svg" width="30"  height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
+                <path class="transition" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="transparent"/>
+                <path class="transition" d="M14 20L19 15L14 10" stroke="white"/>
+                </svg>
+            </div>
           </div>
           <div class="swiper-wrapper gallery__swiper-wrapper">
-            <div data-hystmodal="#myModal_1" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_1">
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_1">
               <picture >
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-1.webp">
                 <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-1.webp">
                 <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-1.webp">
-                 <img src="image/gallery/gallery-1.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-1.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_2" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_2">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_2">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-2.webp">
                 <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-2.webp">
                 <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-2.webp">
-                 <img src="image/gallery/gallery-2.webp" alt="Изображение">
+                 <img class="modal-img-gallery" src="image/gallery/gallery-2.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_3" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_3">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_3">
                <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-3.webp">
                 <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-3.webp">
                 <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-3.webp">
-                <img src="image/gallery/gallery-3.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-3.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_4" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_4">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_4">
                <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-4.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-4.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-4.webp">
-                 <img src="image/gallery/gallery-4.webp" alt="Изображение">
+                 <img class="modal-img-gallery" src="image/gallery/gallery-4.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_5" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_5">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_5">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-5.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-5.webp">
                 <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-5.webp">
-                 <img src="image/gallery/gallery-5.webp" alt="Изображение">
+                 <img class="modal-img-gallery" src="image/gallery/gallery-5.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_6" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_6">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_6">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-6.webp">
                 <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-6.webp">
                 <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-6.webp">
-                 <img src="image/gallery/gallery-6.webp" alt="Изображение">
+                 <img class="modal-img-gallery" src="image/gallery/gallery-6.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_7" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_7">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_7">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-7.webp">
-                 <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-7.webp">
+                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-7.webp">
                 <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-7.webp">
-                 <img src="image/gallery/gallery-7.webp" alt="Изображение">
+                 <img class="modal-img-gallery" src="image/gallery/gallery-7.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_8" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_8">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_8">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-8.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-8.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-8.webp">
-                 <img src="image/gallery/gallery-8.webp" alt="Изображение">
+                 <img class="modal-img-gallery" src="image/gallery/gallery-8.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_9" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_9">
+            </a>
+            <a href="" role="diaolog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_9">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-9.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-9.webp">
                   <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-9.webp">
-                 <img src="image/gallery/gallery-9.webp" alt="Изображение">
+                 <img class="modal-img-gallery" src="image/gallery/gallery-9.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_10" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_10">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_10">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-10.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-10.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-10.webp">
-                <img src="image/gallery/gallery-10.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-10.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_11" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_11">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_11">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-11.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-11.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-11.webp">
-                <img src="image/gallery/gallery-11.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-11.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_12" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_12">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_12">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-12.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-12.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-12.webp">
-                <img src="image/gallery/gallery-12.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-12.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_13" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_13">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_13">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-13.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-13.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-13.webp">
-                <img src="image/gallery/gallery-13.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-13.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_14" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_14">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_14">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-14.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-14.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-14.webp">
-                <img src="image/gallery/gallery-14.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-14.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_15" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_15">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_15">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-15.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-15.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-15.webp">
-                <img src="image/gallery/gallery-15.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-15.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_16" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_16">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_16">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-16.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-16.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-16.webp">
-                <img src="image/gallery/gallery-16.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-16.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_17" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_17">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_17">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-17.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-17.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-17.webp">
-                <img src="image/gallery/gallery-17.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-17.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_18" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_18">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_18">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-18.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-18.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-18.webp">
-                <img src="image/gallery/gallery-18.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-18.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_19" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_19">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_19">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-19.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-19.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-19.webp">
-                <img src="image/gallery/gallery-19.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-19.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_20" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_20">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_20">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-20.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-20.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-20.webp">
-                <img src="image/gallery/gallery-20.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-20.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_21" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_21">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_21">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-21.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-21.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-21.webp">
-                <img src="image/gallery/gallery-21.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-21.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_22" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_22">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_22">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-22.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-22.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-22.webp">
-                <img src="image/gallery/gallery-22.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-22.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_23" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_23">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_23">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-23.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-23.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-23.webp">
-                <img src="image/gallery/gallery-23.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-23.webp" alt="Изображение">
               </picture>
-            </div>
-            <div data-hystmodal="#myModal_24" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_24">
+            </a>
+            <a href="" role="dialog" class="swiper-slide gallery__swiper-slide gallery__swiper-slide_24">
               <picture>
                 <source media="(min-width: 1024px) and (max-width: 1200px)" srcset="image/1024px/gallery-1024px-24.webp">
                  <source media="(min-width: 768px) and (max-width: 1023px)" srcset="image/768px/gallery-768px-24.webp">
                  <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/gallery-320px-24.webp">
-                <img src="image/gallery/gallery-24.webp" alt="Изображение">
+                <img class="modal-img-gallery" src="image/gallery/gallery-24.webp" alt="Изображение">
               </picture>
-            </div>
+            </a>
           </div>
           <div class="swiper-scrollbar"></div>
         </div>
@@ -566,6 +590,18 @@
               </article>
             </div>
           </div>
+          <div data-target="five5" class="catalog__tab-content_artist  artist ">
+            <div class="artist__content">
+              <div class="artist__picture artist__picture_4">
+                <img class="img-artist"  src="image/noImage.png" alt="автор не найден">
+              </div>
+              <article class="artist__description">
+                <h3 class="artist__description_name">Что мы о нём знаем?</h3>
+                <p class="artist__description_text artist__description_text-zero text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                <a href="#gallery" class="link artist_link">В галерею</a>
+              </article>
+            </div>
+          </div>
           <div data-target="one" class="catalog__tab-content_accordion catalog__tab-content_accordion-is-active">
             <ul  class="catalog__accordion accordion">
               <li class="catalog__accordion_item">
@@ -577,76 +613,76 @@
                 <div class="accordion__invis">
                   <ul class="artist-list">
                     <li class="artist-list__item">
-                      <a data-path="one1" class="artist-list__button hover-effect artist-list__button-active">Бенедетто ди Биндо</a>
+                      <button data-path="one1" class="artist-list__button hover-effect artist-list__button-active">Бенедетто ди Биндо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="two2"  class="artist-list__button  hover-effect">Бергоньоне, Амброджо</a>
+                      <button data-path="two2"  class="artist-list__button  hover-effect">Бергоньоне, Амброджо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="three3"  class="artist-list__button hover-effect"> Биссоло, Франческо</a>
+                      <button data-path="three3"  class="artist-list__button hover-effect"> Биссоло, Франческо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="four4" class="artist-list__button hover-effect"> Больтраффио Джованни</a>
+                      <button data-path="four4" class="artist-list__button hover-effect"> Больтраффио Джованни</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="one1" class="artist-list__button hover-effect">Бонсиньори, Франческо</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Бонсиньори, Франческо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="one1" class="artist-list__button hover-effect"> Боттичини Рафаэлло</a>
+                      <button data-path="five5" class="artist-list__button hover-effect"> Боттичини Рафаэлло</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="one1" class="artist-list__button hover-effect">Брамантино</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Брамантино</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="one1" class="artist-list__button hover-effect"> Бреа, Людовико</a>
+                      <button data-path="five5" class="artist-list__button hover-effect"> Бреа, Людовико</button>
                     </li>
                     <li class="artist-list__item">
-                      <a data-path="one1" class="artist-list__button hover-effect">Бьяджо д’Антонио Туччи</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Бьяджо д’Антонио Туччи</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Веккьетта</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Веккьетта</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Андреа Верроккьо</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Андреа Верроккьо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Доменико Гирландайо</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Доменико Гирландайо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Беноццо Гоццоли</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Беноццо Гоццоли</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Граначчи, Франческо</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Граначчи, Франческо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Грегорио ди Чекко</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Грегорио ди Чекко</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни да Удине</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Джованни да Удине</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни ди Паоло</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Джованни ди Паоло</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джорджоне</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Джорджоне</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Парентино, Бернардо</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Парентино, Бернардо</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пезеллино</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Пезеллино</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пьетро Перуджино</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Пьетро Перуджино</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Перуцци, Бальдассаре</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Перуцци, Бальдассаре</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пизанелло</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Пизанелло</button>
                     </li>
                     <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пинтуриккьо</a>
+                      <button data-path="five5" class="artist-list__button hover-effect">Пинтуриккьо</button>
                     </li>
                   </ul>
                 </div>
@@ -658,14 +694,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -675,14 +714,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -692,14 +734,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -709,14 +754,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -726,14 +774,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -743,14 +794,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -764,80 +818,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бергоньоне, Амброджо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Биссоло, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Больтраффио Джованни</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бонсиньори, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Боттичини Рафаэлло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Брамантино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Бреа, Людовико</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бьяджо д’Антонио Туччи</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Веккьетта</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Андреа Верроккьо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Доменико Гирландайо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Беноццо Гоццоли</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Граначчи, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Грегорио ди Чекко</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни да Удине</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни ди Паоло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джорджоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Парентино, Бернардо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пезеллино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пьетро Перуджино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Перуцци, Бальдассаре</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пизанелло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пинтуриккьо</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -847,14 +838,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -864,14 +858,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -881,14 +878,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -898,14 +898,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -915,14 +918,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -932,14 +938,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -953,80 +962,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бергоньоне, Амброджо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Биссоло, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Больтраффио Джованни</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бонсиньори, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Боттичини Рафаэлло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Брамантино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Бреа, Людовико</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бьяджо д’Антонио Туччи</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Веккьетта</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Андреа Верроккьо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Доменико Гирландайо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Беноццо Гоццоли</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Граначчи, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Грегорио ди Чекко</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни да Удине</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни ди Паоло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джорджоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Парентино, Бернардо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пезеллино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пьетро Перуджино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Перуцци, Бальдассаре</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пизанелло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пинтуриккьо</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1036,14 +982,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1053,14 +1002,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1070,14 +1022,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1087,14 +1042,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1104,14 +1062,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1121,14 +1082,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -1142,80 +1106,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бергоньоне, Амброджо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Биссоло, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Больтраффио Джованни</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бонсиньори, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Боттичини Рафаэлло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Брамантино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Бреа, Людовико</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бьяджо д’Антонио Туччи</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Веккьетта</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Андреа Верроккьо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Доменико Гирландайо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Беноццо Гоццоли</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Граначчи, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Грегорио ди Чекко</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни да Удине</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни ди Паоло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джорджоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Парентино, Бернардо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пезеллино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пьетро Перуджино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Перуцци, Бальдассаре</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пизанелло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пинтуриккьо</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1225,14 +1126,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1242,14 +1146,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1259,14 +1166,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1276,14 +1186,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1331,80 +1244,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="two2" class="artist-list__button hover-effect">Бергоньоне, Амброджо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Биссоло, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Больтраффио Джованни</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бонсиньори, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Боттичини Рафаэлло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Брамантино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect"> Бреа, Людовико</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="two2" class="artist-list__button hover-effect">Бьяджо д’Антонио Туччи</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Веккьетта</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="three3" class="artist-list__button hover-effect">Андреа Верроккьо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Доменико Гирландайо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="four4" class="artist-list__button hover-effect">Беноццо Гоццоли</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Граначчи, Франческо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Грегорио ди Чекко</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни да Удине</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джованни ди Паоло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Джорджоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="two2" class="artist-list__button hover-effect">Парентино, Бернардо</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="two2" class="artist-list__button hover-effect">Пезеллино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пьетро Перуджино</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="two2" class="artist-list__button hover-effect">Перуцци, Бальдассаре</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Пизанелло</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="two2" class="artist-list__button hover-effect">Пинтуриккьо</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1414,14 +1264,17 @@
                   </span>
                 </div>
                 <div class="accordion__invis">
-                  <ul class="artist-list">
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Бенедетто ди Биндо Бергоньоне</a>
-                    </li>
-                    <li class="artist-list__item">
-                      <a  data-path="one1" class="artist-list__button hover-effect">Амброджо Биссоло</a>
-                    </li>
-                  </ul>
+                  <div class="noContent">
+                    <div class="rectangle">
+                      <div class="rectangle-two">
+                      </div>
+                    </div>
+                    <div class="noContent_description">
+                       <h3 class="artist__description_name artist__description_name-noContent">Здесь пока пусто</h3>
+                       <p class="artist__description_text artist__description_text-noContent text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                       <a href="#gallery" class="link artist_link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="catalog__accordion_item">
@@ -1737,9 +1590,21 @@
         </div>
         <div class="editions__swiper-container swiper-container swiper4" data-mobile="false">
           <div class="pagination-container_editions">
-            <div class="swiper-button-prev2 swiper-button-prev-style focus"></div>
-            <div class="swiper-pagination swiper-pagination2"></div>
-            <div class="swiper-button-next2 swiper-button-next-style focus"></div>
+            <div class="swiper-button-prev2 swiper-button-prev-style focus">
+              <svg class="swiper-button-svg" width="30"  height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
+                <path class="transition" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="transparent"/>
+                <path class="transition" d="M16 20L11 15L16 10" stroke="white"/>
+                </svg>
+            </div>
+            <div class="swiper-pagination  swiper-pagination2"></div>
+            <div class="swiper-button-next2 swiper-button-next-style focus">
+              <svg class="swiper-button-svg" width="30"  height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
+                <path class="transition" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="transparent"/>
+                <path class="transition" d="M14 20L19 15L14 10" stroke="white"/>
+                </svg>
+            </div>
           </div>
           <div class="swiper-wrapper editions__swiper-wrapper">
             <div class="swiper-slide editions__swiper-slide editions__swiper-slide_1">
@@ -1928,11 +1793,25 @@
           Проекты
         </h2>
         <p class="text projects__description projects__description_text-minwidth">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное
-          информационно-пропагандистское <span class="projects__marker" tabindex="0">i<span class="projects__popup projects__popup-one">Пример современных тенденций - современная методология разработки</span></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="projects__marker" tabindex="0">i<span class="projects__popup projects__popup-two">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span></span> исключительно в разрезе маркетинговых и финансовых <span class="projects__marker" tabindex="0">i<span class="projects__popup projects__popup-three">В стремлении повысить качество</span></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:<a href="http://blanchard-art.ru/projects/about" aria-label="узнать подробнее о проектах" class="projects__link">blanchard-art.ru/projects/about</a>
+          информационно-пропагандистское <span class="projects__marker" tabindex="0"><svg class="svg-i" width="2" height="10" viewbox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z" fill="black"/>
+            </svg>
+            <span class="projects__popup projects__popup-one">Пример современных тенденций - современная методология разработки</span></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="projects__marker" tabindex="0"><svg class="svg-i" width="2" height="10" viewbox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg">             <path d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z" fill="black"/>
+            </svg>
+            <span class="projects__popup projects__popup-two">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span></span> исключительно в разрезе маркетинговых и финансовых <span class="projects__marker" tabindex="0"><svg class="svg-i" width="2" height="10" viewbox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.261539 3.4551H1.73846V10H0.261539V3.4551ZM1 1.90259C0.712821 1.90259 0.471795 1.81126 0.276924 1.62861C0.0923081 1.44597 0 1.22273 0 0.958904C0 0.695079 0.0923081 0.471841 0.276924 0.289193C0.471795 0.0963976 0.712821 0 1 0C1.28718 0 1.52308 0.0913239 1.70769 0.273972C1.90256 0.446473 2 0.664636 2 0.928462C2 1.20243 1.90256 1.43582 1.70769 1.62861C1.52308 1.81126 1.28718 1.90259 1 1.90259Z" fill="black"/>
+            </svg>
+            <span class="projects__popup projects__popup-three">В стремлении повысить качество</span></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:<a href="http://blanchard-art.ru/projects/about" aria-label="узнать подробнее о проектах" class="projects__link">blanchard-art.ru/projects/about</a>
         </p>
         <h3 class="partners-subtitle subtitle-small">Партнёры проектов:</h3>
         <div class="partners__container">
-          <div class="swiper-button-prev-style swiper-button-prev5 focus"></div>
+          <div class="swiper-button-prev-style swiper-button-prev5 ">
+             <svg class="swiper-button-svg" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
+               <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="transparent"/>
+               <path d="M16 20L11 15L16 10" stroke="black"/>
+            </svg>
+          </div>
           <div class="projects__swiper-container swiper-container swiper5">
             <div class="swiper-wrapper projects__swiper-wrapper">
               <div class="swiper-slide projects__swiper-slide projects__swiper-slide1">
@@ -1941,7 +1820,6 @@
                     <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/partners-320px-1.webp">
                     <img class="projects-img-width" src="image/partner-2.png" alt="ссылка на партнера проекта">
                   </picture>
-
                 </a>
               </div>
               <div class="swiper-slide projects__swiper-slide projects__swiper-slide2">
@@ -1950,7 +1828,6 @@
                     <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/partners-320px-2.webp">
                     <img class="projects-img-width" src="image/partner-6.png" alt="ссылка на партнера проекта">
                   </picture>
-
                 </a>
               </div>
               <div class="swiper-slide projects__swiper-slide projects__swiper-slide3">
@@ -1959,7 +1836,6 @@
                     <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/partners-320px-3.webp">
                     <img class="projects-img-width" src="image/partner-1.png" alt="ссылка на партнера проекта">
                   </picture>
-
                 </a>
               </div>
               <div class="swiper-slide projects__swiper-slide projects_">
@@ -1984,7 +1860,6 @@
                     <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/partners-320px-6.webp">
                     <img class="projects-img-width" src="image/partner-5.png" alt="ссылка на партнера проекта">
                   </picture>
-
                 </a>
               </div>
               <div class="swiper-slide projects__swiper-slide projects__swiper-slide7">
@@ -1993,7 +1868,6 @@
                     <source media="(min-width: 150px) and (max-width: 767px)" srcset="image/320px/partners-320px-7.webp">
                     <img class="projects-img-width" src="image/partner-4.png" alt="ссылка на партнера проекта">
                   </picture>
-
                 </a>
               </div>
               <div class="swiper-slide projects__swiper-slide projects__swiper-slide8">
@@ -2014,28 +1888,36 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next-style swiper-button-next5 focus"></div>
+          <div class="swiper-button-next-style swiper-button-next5 ">
+            <svg class="swiper-button-svg" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
+              <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="transparent"/>
+              <path d="M14 20L19 15L14 10" stroke="black"/>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
     <section id="contacts" class="contacts">
-      <div class="container">
+      <div class="contacts__subtitle-container">
         <h2 class="subtitle contacts__subtitle">Контакты</h2>
       </div>
       <div class="adres_mobile text">
         <span class="adres__subtitle subtitle-small">Шоурум №2</span>
         Леонтьевский переулок, дом 5/1
       </div>
-      <div class="container contacts__container">
-
+      <div class=" contacts__container">
         <div class="contacts__content-orientation content-orientation">
           <div class="contacts__content-block_left content-block_left">
+            <div class="mail-message invisible">
+              <h3 class="message-txt"></h3>
+            </div>
             <div class="adres text">
               <span class="adres__subtitle subtitle-small">Шоурум №2</span>
               Леонтьевский переулок, дом 5/1
             </div>
             <h3 class="contacts__form-label" >Заказать обратный звонок</h3>
-            <form id="contacts__form" action="send.php" class="contacts__form form" method="POST">
+            <form id="contacts__form" class="contacts__form form" >
               <div class="row">
                 <div class="form-group">
                   <label class="input-label" for="name"></label>
@@ -2046,14 +1928,14 @@
                   <input aria-label="для заказа обратного звонка введите телефон" type="tel" class="form__input input-style" placeholder="Телефон*" autocomplete="off" data-validate-field="tel" data-validate-rules="phone" name="number" id="telephone">
                 </div>
               </div>
-              <button aria-label="заказать обратный звонок" class="form__btn btn-effect_empty btn-effect-focus btn-style btn">Заказать</button>
+              <button type="submit" aria-label="заказать обратный звонок" class="form__btn btn-effect_empty btn-effect-focus btn-style btn">Заказать</button>
             </form>
             <h3 class="contacts__form-label one-click-label">Связаться в один клик</h3>
             <a aria-label="связаться в один клик через wats-up" href=" https://wa.me/79120374755" class="one-click-link one-click-link_watsUp">
               <svg class="svg-social-link" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>
                 <path d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87489 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z" fill="white"/>
-                </svg>
+              </svg>
             </a>
             <a aria-label="связаться в один клик через telegram" href=" https://t.me/79120374755" class="one-click-link one-click-link_tg">
               <svg class="svg-social-link" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2110,479 +1992,32 @@
       </ul>
     </div>
   </footer>
-  <div class="hystmodal" id="myModal_1" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Закрыть</button>
-            <div class="modal-continer">
-              <div class="modal-container-left-block modal-picture-1"></div>
-              <div class="modal-container-right-block">
-                <div class="modal-description">
-                  <h3 class="modal-title">Казимир Малевич</h3>
-                  <span class="modal-subtitle">"Женщина с граблями"</span>
-                  <span class="modal-subsubtitle">1931-1932</span>
-                  <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-                </div>
-              </div>
-            </div>
+</div>
+  <div class="modal" id="modal">
+    <div class="modal-window">
+      <button class="close-modal-button">
+        <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -0.000125032L15.3334 15.3041L14.6667 15.9998L5.76143e-05 0.695522L0.666725 -0.000125032Z" fill="black"/>
+          </svg>
+      </button>
+      <div class="modal-continer">
+        <div class="modal-container-left-block modal-picture-1"></div>
+        <div class="modal-container-right-block">
+          <div class="modal-description">
+            <h3 class="modal-title">Казимир Малевич</h3>
+            <span class="modal-subtitle">"Женщина с граблями"</span>
+            <span class="modal-subsubtitle">1931-1932</span>
+            <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="hystmodal" id="myModal_2" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-2"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
   </div>
-</div>
-<div class="hystmodal" id="myModal_3" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-3"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_4" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-4"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_5" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-5"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_6" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-6"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_7" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-7"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_8" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-8"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_9" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-9"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_10" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-10"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_11" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-11"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_12" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-12"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_13" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-13"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_14" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-14"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_15" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-15"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_16" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-16"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_17" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-17"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_18" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-18"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_19" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-19"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_20" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-20"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_21" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-21"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_22" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-22"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_23" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-23"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="hystmodal" id="myModal_24" aria-hidden="true">
-  <div class="hystmodal__wrap">
-      <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <div class="modal-continer">
-            <div class="modal-container-left-block modal-picture-24"></div>
-            <div class="modal-container-right-block">
-              <div class="modal-description">
-                <h3 class="modal-title">Казимир Малевич</h3>
-                <span class="modal-subtitle">"Женщина с граблями"</span>
-                <span class="modal-subsubtitle">1931-1932</span>
-                <p class="modal-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
 
-
-<script>
-let button = document.querySelectorAll('.artist-list__button')
-let artists = document.querySelectorAll('.catalog__tab-content_artist')
-
-    artists.forEach((item,index)=>{
-      if (window.innerWidth <=1024){
-        item.id = 'artist' + (index+1)
-      }
-      else if (window.innerWidth >1024){
-        item.removeAttribute('id')
-      }
-     })
-
-button.forEach((item, index)=>{
-  item.addEventListener('click', function(){
-    if (window.innerWidth<=1024){
-      setTimeout(()=>{let x = artists[index].offsetTop -140
-    scrollTo(0, x)},200)
-    }
-  })
-})
-</script>
-
-<script>
-Array.prototype.forEach.call(
-  document.querySelectorAll('.myElements'),
-  el => new SimpleBar({
-  }),
-
-);
-</script>
-
-<script src="js/hystmodal.min.js"></script>
-<script>
-const myModal = new HystModal({
-    linkAttributeName: "data-hystmodal",
-    backscroll: false,
-});
-</script>
+<script src="js/inert.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/tab-scroll.js"></script>
 <script  src="js/swiper-bundle.min.js"></script>
 <script  src="js/min/tabs.js"></script>
 <script  src="js/min/tabs2.js"></script>
@@ -2603,9 +2038,8 @@ const myModal = new HystModal({
 <script src="js/accordion-init.js"></script>
 <script src="js/min/choise-filter.js"></script>
 <script src="js/min/map-init.js"></script>
-<script src="js/min/inputMask-validate.js"></script>
+<script src="js/inputMask-validate.js"></script>
 <script src="js/min/burger-search.js"></script>
 
 </body>
-
 </html>

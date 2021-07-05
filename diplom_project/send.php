@@ -12,7 +12,7 @@ $name = trim($name);
 $number = trim($number);
 
 if (mail("vova280297@gmail.com", "Заявка с сайта", "Имя:".$name.". Телефон: ".$number ,"From: info@diplom-my.tmweb.ru \r\n")) {
-  echo "Спасибо, сообщение отправленно  <a href='http://diplom-my.tmweb.ru/#'>Вернуться на главную</a>"
+  echo "Спасибо, сообщение отправленно"
   ;
 
 } else {
