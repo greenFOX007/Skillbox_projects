@@ -1,0 +1,107 @@
+body {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.form-container {
+  width: 83%;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label-input {
+  width: 30%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+.input {
+  padding: 15px 5px;
+  font-size: 24px;
+}
+
+.bad-value {
+  border: 2px solid red;
+}
+
+.add-btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: blueviolet;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid black;
+  outline: none;
+
+}
+
+.btn-clear {
+  display: block;
+  margin: 30px auto 0;
+  padding: 15px 30px;
+  background-color: blueviolet;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid black;
+  outline: none;
+}
+
+.danger-message{
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: red;
+  position:absolute;
+  bottom: 0;
+}
+
+.input-filter {
+  display: inline-block;
+  padding: 15px 5px;
+  font-size: 24px;
+}
+
+.input-filter:not(:last-child){
+  margin-right: 50px;
+}
+
+.filter-container {
+  margin: 0 auto;
+  width: 83%;
+  padding: 10px 30px 50px 30px;
+  text-align: center;
+}
+
+.filter-label {
+  display: inline-flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  width: 300px;
+  margin-right: 50px;
+}
+
+.title-container{
+  margin: 0 auto;
+  width: 83%;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
